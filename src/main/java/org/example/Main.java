@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        teste();
-        ex1();
-        ex2();
+//        teste();
+//        ex1();
+//        ex2();
+        ex3();
     }
     public static void teste(){
             String product1 = "Computer";
@@ -39,6 +40,23 @@ public class Main {
         float areaCalc = raio * pi;
 
         System.out.printf("Area do circulo com raio de %.4f: %.4f",raio,areaCalc);
+    }
+
+    public static void ex3(){
+        Scanner sc = new Scanner(System.in);
+
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        int n3 = sc.nextInt();
+        int n4 = sc.nextInt();
+
+        int p1 = n1 * n2;
+        int p2 = n3 * n4;
+
+        int r = p1 - p2;
+
+        System.out.printf("Resposta:  %d ",r);
+
 
 
     }
