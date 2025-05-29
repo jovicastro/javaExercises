@@ -7,7 +7,8 @@ public class Main {
 //        teste();
 //        ex1();
 //        ex2();
-        ex3();
+//        ex3();
+        ex4();
     }
     public static void teste(){
             String product1 = "Computer";
@@ -55,10 +56,18 @@ public class Main {
 
         int r = p1 - p2;
 
-        System.out.printf("Resposta:  %d ",r);
+        System.out.println(r);
+    }
 
+    public static void ex4(){
+        Scanner sc = new Scanner(System.in);
 
+        int WorkerID = sc.nextInt();
+        float Salary = sc.nextFloat();
+        float WorkedHours = sc.nextFloat();
 
+        System.out.printf("ID do trabalhador: %d%n",WorkerID);
+        System.out.print(Salary * WorkedHours);
     }
 
     }
