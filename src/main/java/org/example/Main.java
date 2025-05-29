@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,7 +9,8 @@ public class Main {
 //        ex1();
 //        ex2();
 //        ex3();
-        ex4();
+//        ex4();
+        ex5();
     }
     public static void teste(){
             String product1 = "Computer";
@@ -70,4 +72,21 @@ public class Main {
         System.out.print(Salary * WorkedHours);
     }
 
+    public static void ex5(){
+        Scanner sc = new Scanner(System.in);
+        Random rd = new Random();
+        int clothesID = rd.nextInt(26);
+
+        int clothesQnt = rd.nextInt(6);
+
+        float clothesPrice = rd.nextFloat(11);
+
+        float clothesTotalPrice = clothesPrice * clothesQnt;
+
+//        System.out.println(clothesID);
+//        System.out.println(clothesQnt);
+//        System.out.println(clothesPrice);
+//        System.out.println(clothesTotalPrice);
+        System.out.printf("price to buy it: %.2f",clothesTotalPrice);
+    }
     }
